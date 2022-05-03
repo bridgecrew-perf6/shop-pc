@@ -318,7 +318,7 @@ const ProductView = () => {
       {/* DESCRIPTION */}
       <div className="flex justify-between  flex-wrap p-4">
         {/* descrition */}
-        <div className="w-[69%] bg-white p-4 rounded-md">
+        <div className="xl:w-[69%] w-full bg-white p-4 rounded-md">
           {/* {data && data.description} */}
           {data && <Markup content={data.description} />}
         </div>
@@ -326,7 +326,7 @@ const ProductView = () => {
         {/* descrition */}
 
         {/* information product */}
-        <div className="w-[30%] bg-white h-fit rounded-lg ">
+        <div className="xl:w-[30%] w-full bg-white h-fit rounded-lg ">
           <h3 className=" py-5 text-center text-lg font-medium">
             Thông tin chi tiết
           </h3>

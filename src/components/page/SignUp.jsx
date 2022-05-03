@@ -112,7 +112,7 @@ const SignUp = () => {
 
           {/* block 2 */}
           <div className="lg:w-[40%] w-full  rounded-r-lg">
-            <div className="px-10 py-2`">
+            <div className="xl:p-10 lg:p-8 p-3">
               <div className="text-base mb-5">
                 <h4>Sign up with your email</h4>
                 <h5>

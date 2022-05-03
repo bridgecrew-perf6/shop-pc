@@ -54,7 +54,7 @@ const Home = () => {
         <Banner />
         <ListPc />
         <ListLaptop />
-        <div className="w-full overflow-hidden  bg-[#f8f8fc] p-5">
+        <div className="w-full   bg-[#f8f8fc] xl:p-5 p-1 aspect-auto">
           <img
             src="https://lh3.googleusercontent.com/rgdxfc-mni8_oLsSCfEdwCBEdOnWKfdAox_pyWJGmAJMlCC_O-2hwaUx7FUmo524De9BAWdJ5Xf0-V9WoYP6tM_X-ykCp5c=rw-w1232"
             className="w-full  rounded-md hover:scale-105 transition-all hover:rounded-md"

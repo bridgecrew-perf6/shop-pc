@@ -112,7 +112,7 @@ const Login = () => {
 
           {/* block 2 */}
           <div className="lg:w-[40%] w-full  rounded-r-lg">
-            <div className="p-10">
+            <div className="xl:p-10 lg:p-8 p-5">
               <div className="text-xl font-semibold text-[#1435c3]">
                 <h4>You're</h4>
                 <h5>Welcome</h5>

@@ -45,7 +45,7 @@ const Footer = () => {
     }
   };
   return (
-    <div className="mt-5">
+    <div className="mt-5 px-3 lg:px-0">
       {/* footer block 1 */}
       <div className="bg-[#1435c3] flex items-center lg:flex-row flex-col p-3 justify-between ">
         <div className="flex items-center lg:ml-10">

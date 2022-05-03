@@ -92,16 +92,17 @@ const Banner = () => {
           return (
             <key key={index}>
               <SwiperSlide key={index}>
-                <div>
-                  <img src={item} className="h-[500px] object-cover" />
+                <div className="aspect-video xl:aspect-auto">
+                  <img
+                    src={item}
+                    className="w-full h-full xl:h-[500px] object-cover"
+                  />
                 </div>
               </SwiperSlide>
             </key>
           );
         })}
-        {/* <div className="absolute top-[3%] z-10 left-10 xl:block hidden ">
-          <Menu />
-        </div> */}
+
         <div className="absolute top-[3%] right-10 z-10 xl:block hidden">
           <div className="w-[200px] h-[200px] overflow-hidden rounded-md">
             <a
@@ -127,8 +128,12 @@ const Banner = () => {
           </div>
         </div>
       </Swiper>
+
       <div className="py-1 bg-slate-50 relative">
-        <img src="https://cdn-vn.pushdy.com/_uploads/phongvu_live_teko/f5525bc1552647d5b1dd818414d4c568.png" />
+        <img
+          src="https://cdn-vn.pushdy.com/_uploads/phongvu_live_teko/f5525bc1552647d5b1dd818414d4c568.png"
+          // className="w-full h-full object-cover"
+        />
         <div className="absolute top-[50%] transform translate-y-[-50%] lg:right-4 right-0">
           <div className="flex items-center md:flex-row flex-col">
             <h3 className="uppercase font-semibold mr-2 lg:text-lg text-base hidden md:block">

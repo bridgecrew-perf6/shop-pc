@@ -29,19 +29,16 @@ const HeaderMobile = () => {
     <>
       <div className="container mx-auto ">
         <div className="my-2 flex justify-between items-center">
-          <div className="cursor-pointer" onClick={() => setIsMenu(!isMenu)}>
+          <div
+            className="cursor-pointer min-w-[65px] pl-3"
+            onClick={() => setIsMenu(!isMenu)}
+          >
             <AiOutlineMenu />
           </div>
           <Link to="/">
             <div className="w-full">
               {" "}
-              <img
-                width="150px"
-                height="50px"
-                // className="w-4/5 h-full object-cover"
-                // src="https://phongvu.vn/phongvu/logo-full.svg"
-                src={logo1}
-              />
+              <img width="150px" height="50px" src={logo1} />
             </div>
           </Link>
           <Link to="/cart">
@@ -51,7 +48,7 @@ const HeaderMobile = () => {
           </Link>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center px-3 xl:px-0">
           <input
             type="text"
             placeholder="Nhập từ khóa cần tìm ..."
@@ -86,7 +83,7 @@ const HeaderMobile = () => {
                 Đăng nhập
               </div>
             </Link>
-            <div className="flex flex-col justify-start">
+            <div className="flex flex-col justify-start mt-5">
               <div className="capitalize flex items-center">
                 <AiOutlineWindows size={"25px"} className="mr-3 mb-3" />
                 danh mục sản phẩm

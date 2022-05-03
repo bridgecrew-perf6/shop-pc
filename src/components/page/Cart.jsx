@@ -86,7 +86,7 @@ const Cart = () => {
   return (
     <Helmet title="Giỏ Hàng">
       <motion.div
-        className="w-full bg-slate-50 py-5"
+        className="w-full bg-slate-50 py-5 box-border"
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
@@ -102,7 +102,7 @@ const Cart = () => {
             Giỏ hàng
           </div>
         </div>
-        <div className="container mx-auto bg-slate-50">
+        <div className="container mx-auto bg-slate-50 px-3 lg:px-0">
           {/* item cart */}
           <div className="flex flex-wrap lg:justify-between ">
             {/* block1 */}
@@ -139,7 +139,7 @@ const Cart = () => {
             </div>
             {/* block1 */}
             {/* block2 */}
-            <div className="lg:w-[33%] w-full bg-white rounded-xl p-5 h-fit mt-5 lg:mt-0">
+            <div className="lg:w-[33%] w-full bg-white rounded-xl p-5 h-fit mt-5 lg:mt-0 ">
               <h5 className="text-xl font-medium text-[#333]">Thanh toán</h5>
               <div className="flex justify-between items-center mt-2">
                 <div className="text-sm text-[#848788]">Tạm tính</div>

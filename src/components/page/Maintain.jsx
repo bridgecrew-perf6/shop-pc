@@ -5,7 +5,7 @@ const Maintain = () => {
   return (
     <Helmet title="Bảo Hành">
       <motion.div
-        className="container mx-auto"
+        className="container mx-auto px-3 md:px-0"
         initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
         animate={{ clipPath: "polygon(100% 0, 0 0, 0 100%, 100% 100%)" }}
         exit={{
