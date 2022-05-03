@@ -1,7 +1,9 @@
 const initialState = {
   tokenDefault:
     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsImV4cCI6MTY1MTcyMTA2MH0.dMLRU-TLX_nnhE9oP_ies9NbLodMIXdUIrQ0J3MitZY",
-  rememberMe: JSON.parse(localStorage.getItem("isChecked")),
+  rememberMe: localStorage.getItem("isChecked")
+    ? JSON.parse(localStorage.getItem("isChecked"))
+    : false,
   reRenderUser: 0,
   emailForgot: "",
   codeForgot: "",

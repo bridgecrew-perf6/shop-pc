@@ -36,13 +36,12 @@ import Sale from "./page/Sale";
 import Voucher from "./admin/page/Voucher";
 const AnimatedRoute = () => {
   const location = useLocation();
-  const [admin, setAdmin] = useState(false);
+  const [admin, setAdmin] = useState(true);
   const informationUser = JSON.parse(sessionStorage.getItem("informationUser"));
 
   const signUp = useSelector((state) => state.blockpage.signUp);
   const login = useSelector((state) => state.blockpage.login);
 
-  // console.log("check redux", signUp);
   useEffect(async () => {
     var decoded = jwt_decode(informationUser);
     const { role } = decoded;
@@ -77,7 +76,7 @@ const AnimatedRoute = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
 
-        {admin ? (
+        {admin && (
           <Route path="/admin" element={<Admin />}>
             <Route index element={<Product />} />
             <Route path="product" element={<Product />} />
@@ -88,10 +87,6 @@ const AnimatedRoute = () => {
             <Route path="bill" element={<Bill />} />
             <Route path="advertisement" element={<Advertisement />} />
             <Route path="voucher" element={<Voucher />} />
-          </Route>
-        ) : (
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
           </Route>
         )}
       </Routes>

@@ -1,4 +1,8 @@
-const initialState = { isMenu: JSON.parse(localStorage.getItem("stateMenu")) };
+const initialState = {
+  isMenu: localStorage.getItem("stateMenu")
+    ? JSON.parse(localStorage.getItem("stateMenu"))
+    : true,
+};
 
 const stateMenu = (state = initialState, action) => {
   switch (action.type) {

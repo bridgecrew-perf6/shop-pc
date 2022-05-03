@@ -1,19 +1,19 @@
 const initialState = {
-  signUp: JSON.parse(localStorage.getItem("blockSignUp")),
-  // ? JSON.parse(localStorage.getItem("blockSignUp"))
-  // : true,
-  login: JSON.parse(localStorage.getItem("blockLogin")),
-  // ? JSON.parse(localStorage.getItem("blockLogin"))
-  // : true,
-  resetPassword: JSON.parse(localStorage.getItem("blockResetPassWord"))
-    ? JSON.parse(localStorage.getItem("blockResetPassWord"))
+  signUp: localStorage.getItem("blockSignUp")
+    ? JSON.parse(localStorage.getItem("blockSignUp"))
     : true,
-  inputCode: JSON.parse(localStorage.getItem("blockInputCode"))
-    ? JSON.parse(localStorage.getItem("blockInputCode"))
+  login: localStorage.getItem("blockLogin")
+    ? JSON.parse(localStorage.getItem("blockLogin"))
     : true,
-  setNewPassword: JSON.parse(localStorage.getItem("blockSetNewPassword"))
-    ? JSON.parse(localStorage.getItem("blockSetNewPassword"))
-    : true,
+  // resetPassword: JSON.parse(localStorage.getItem("blockResetPassWord"))
+  //   ? JSON.parse(localStorage.getItem("blockResetPassWord"))
+  //   : true,
+  // inputCode: JSON.parse(localStorage.getItem("blockInputCode"))
+  //   ? JSON.parse(localStorage.getItem("blockInputCode"))
+  //   : true,
+  // setNewPassword: JSON.parse(localStorage.getItem("blockSetNewPassword"))
+  //   ? JSON.parse(localStorage.getItem("blockSetNewPassword"))
+  //   : true,
 };
 
 const blockPage = (state = initialState, action) => {
